@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --pry-color: #00ccb1;
+    --sec-color: #7d8588;
+    --white: #fff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+} 
+
+a {
+    text-decoration: none;
+}
+
+/* Header starts here */
+.header_logo a img {
+    font-size: 20;
+}
+header {
+    background: var(--white);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0,0) rgba(0,0,0,0,0.1));
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo starts here */
+.header_logo a {
+    top: 0;
+    padding-left: 170px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+}
+
+.header_logo a word_one { 
+    color: var(--pry-color)
+}
+
+.header_logo a word_two { 
+    color: var(--sec-color);
+}
+/* Logo ends here */
+/* Navbar starts here */
+.nav_bar {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    top: 0;
+    word-spacing: 25px;
+}
+.nav_bar a {
+    width: 100%;
+    font-weight: 520;
+    margin-left: 25px;
+    color: var(--sec-color);
+    transition: 1.0s; 
+
+}
+
+.nav_bar a:hover {
+    color: var(--pry-color);
+    transition: 1.0s;
+}
+.nav_bar a about {
+    color: var(--pry-color);
+}
+/* Navbar ends here */
+/* Header ends here */
+
+/* Main section starts here */
+.logo_img {
+    max-height: 2.5rem;
+    margin-right: 10px;
+}
+.main_section_logo {
+    text-align: center;
+}
+.main_section_header {
+    color: var(--pry-color);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 270;
+    font-family: 'Work Sans';
+}
+
+
+.paragraphs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 15px;
+    color: var(--sec-color);
+    font-weight: 450;
+}
+
+.main_section_paragraph_one aside, .main_section_paragraph_two aside {
+    width: 45%;
+    padding: 15px;
+}
+
+.main_section_paragraph_one {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 220px;
+}
+
+.main_section_paragraph_two {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 225px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center; 
+    justify-items: center;
+    align-items: center; 
+    height: 100vh; 
+    margin-top: 0px;
+}
+ #patient_card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.119);
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    width: 340px;
+    height: 345px;
+    display: inline-block;
+    position: relative; 
+    text-align: center;
+    margin-top: 70px; 
+    flex-direction: column;
+    padding: 2em 2em 0;
+    text-align: left;
+    color: var(--white);
+    background-color: var(--pry-color);
+    transition: 1.0s; 
+  }
+
+  #dr_card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.119);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 330px;
+    height: 345px;
+    display: inline-block;
+    position: relative; 
+    text-align: center;
+    margin-top: 70px; 
+    flex-direction: column;
+    padding: 2em 2em 0;
+    text-align: left;
+    color: var(--white);
+    background-color: #3d83df;
+    transition: 1.0s; 
+  }
+
+  #clinic_card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.119);
+    padding: 20px;
+    margin: 20px;
+    top: 0;
+    text-align: center;
+    width: 340px;
+    height: 345px;
+    display: inline-block;
+    position: relative; 
+    text-align: center;
+    margin-top: 70px; 
+    flex-direction: column;
+    padding: 2em 2em 0;
+    text-align: left;
+    color: var(--white);
+    background-color: #1b2734;
+    transition: 1.0s; 
+  }
+
+.card_description {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+.country_choice_patient {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    transition: 1.0s;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+    border-radius: 5px;
+    border: 0;
+    background: var(--pry-color);   
+    cursor: pointer;
+ }
+
+select {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.country_choice_dr {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    transition: 1.0s;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+    border-radius: 5px;
+    border: 0;
+    background: #3d83df;   
+    cursor: pointer;
+ }
+ 
+.specialists_choice {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    transition: 1.0s;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+    border-radius: 5px;
+    border: 0;
+    background: #1b2734;   
+    cursor: pointer;
+ }
+ 
